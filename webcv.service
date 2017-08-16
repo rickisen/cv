@@ -1,0 +1,13 @@
+[Unit]
+Description=Webcv Docker Starter
+After=network.target docker.socket docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+ExecStartPre=/usr/bin/docker-compose -f /home/docka/cv/docker-compose.yml down -v
+ExecStart=/usr/bin/docker-compose    -f /home/docka/cv/docker-compose.yml up --build
+ExecStop=/usr/bin/docker-compose     -f /home/docka/cv/docker-compose.yml down -v
+
+[Install]
+WantedBy=multi-user.target
