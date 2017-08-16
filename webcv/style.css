@@ -1,9 +1,9 @@
 body {
-  background-image:url(http://feelgrafix.com/data_images/out/28/997326-code.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position:center;
+  background-position: center;
   background-color:#222;
   font-family:sans-serif;
   font-size:13px;
@@ -124,6 +124,7 @@ h2 {
 
 @media screen and (max-width: 760px) {
   body {
+    background-image: none;
     background: #222;
   }
 
@@ -188,16 +189,15 @@ h2 {
   }
 
   body {
+    background-image: none;
     background-color: white;
-    margin: 10mm 0mm 10mm 0mm;
+    margin: 0mm 10mm 10mm 10mm;
   }
 
-  html
-  {
+  html {
     background-color: #FFFFFF;
     margin: 0px;  /* this affects the margin on the html before sending to printer */
   }
-
 
   #paper {
     box-shadow:none;
@@ -216,10 +216,18 @@ h2 {
     margin-top:0.7rem;
   }
 
-  #anst section:nth-of-type(4), #ovrigt section:nth-of-type(2){
-    margin-top: 3rem;
-    page-break-before:always;
+  section, #utbildningar, #ovrigt {
+    page-break-inside:avoid;
   }
+
+  /* #utbildningar, #ovrigt { */
+  /*   page-break-before:always; */
+  /* } */
+  /*  */
+  /* #anst section:nth-of-type(4), #ovrigt section:nth-of-type(2){ */
+  /*   margin-top: 3rem; */
+  /*   page-break-before:always; */
+  /* } */
 
   hr {
     margin: 1rem auto;
@@ -230,8 +238,20 @@ h2 {
   }
 }
 
+@page {
+    margin: 20mm 0;
+}
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.email-user::after {
+  content:"@";
+}
+
+.number::before {
+  content:"+46";
 }
