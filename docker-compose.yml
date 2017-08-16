@@ -1,0 +1,8 @@
+version: '2'
+services:
+  webcv:
+    image: httpd
+    ports:
+      - "80:80"
+    volumes:
+      - ./webcv:/usr/local/apache2/htdocs/
