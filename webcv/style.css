@@ -84,11 +84,40 @@ h4, h5, h6 {
   margin-top:0;
 }
 
+#anst ul {
+  margin-bottom: 2rem;
+}
+
+#anst ul li > * {
+  margin: 0;
+}
+
+#anst ul li {
+  margin: 0 0 1rem 0;
+}
+
+#anst ul li p {
+  clear: both;
+  max-width: 25rem;
+  margin: 0.2rem 0;
+}
+
+#anst ul li h4 {
+  font-weight: bold;
+}
+
+#anst ul li h4 span {
+  font-weight: normal;
+  padding-right: 40px;
+  float: right;
+}
+
 #wrapper section > p {
   display:inline-block;
   width: 82%;
 }
 
+.secondary, secondary * { color: #666; }
 .right { float:right; }
 .left { float:left; }
 .clear { clear:both; }
@@ -156,6 +185,10 @@ h2 {
     text-align: center;
   }
 
+  .no-mobile {
+    display: none;
+  }
+
   #wrapper > header img, #wrapper > header section {
     display: block;
     margin:0 auto;
@@ -170,15 +203,25 @@ h2 {
   #tekniker section {
     /* display: block; */
     /* width:75%; */
-    margin: 1rem;
-    width: calc(50% - 2rem);
+    margin-top: 1rem;
+    width: calc(50%);
     min-width: 8rem;
     margin-bottom:1rem;
   }
 
   #tekniker ul {
-    margin: 1.2rem 0.4rem;
+    /* margin: 1.2rem 0.4rem; */
+    margin: 1rem 0;
     font-size: 1.2em;
+    padding-right: 0!important;
+  }
+
+  #anst ul {
+    padding: 0 0 0 1rem;
+  }
+
+  #anst ul li h4 span {
+    padding-right: 0.5rem;
   }
 }
 
@@ -216,7 +259,7 @@ h2 {
     margin-top:0.7rem;
   }
 
-  section, #utbildningar, #ovrigt {
+  section, #utbildningar, #ovrigt, #anst {
     page-break-inside:avoid;
   }
 
