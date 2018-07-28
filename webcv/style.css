@@ -31,9 +31,14 @@ h4, h5, h6 {
   font-weight:400;
 }
 
+header h2 {
+  margin:1em 0 0.5rem 0;
+}
+
+
 #paper {
-  width:21cm;
-  margin:1cm auto;
+  width:50rem;
+  margin:5rem auto;
   background-color:#eee;
   box-shadow: 5px 5px 20px rgba(20,20,20,0.5);
 }
@@ -54,7 +59,7 @@ h4, h5, h6 {
   margin:0 2.8rem;
 }
 
-#wrapper > header section h3{
+#wrapper > header section h3 {
   margin-top:2rem;
 }
 
@@ -71,8 +76,8 @@ h4, h5, h6 {
   width:33%;
 }
 
-#tekniker header h2 {
-  margin-top:1em;
+#tekniker h3 {
+  margin: 1em 0 0.5em 0;
 }
 
 #tekniker section ul {
@@ -141,10 +146,6 @@ h3 {
 h3 .right {
   font-weight:400;
   padding:0 1em 0 0 ;
-}
-
-h2 {
-  margin:2rem 0 -0.5rem 0;
 }
 
 #paper h1 {
@@ -244,6 +245,8 @@ h2 {
 
   #paper {
     box-shadow:none;
+    margin:1cm auto;
+    width:21cm;
     background-color: white;
   }
 
