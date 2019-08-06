@@ -95,7 +95,7 @@ footer {
 
 #wrapper > header section {
   float: left;
-  margin: 0 2.8rem;
+  margin: 0 3rem;
 }
 
 #wrapper > header section h3 {
@@ -113,7 +113,7 @@ footer {
 }
 
 #tekniker {
-  margin-bottom: 1rem;
+  margin: 1rem 0 0 0;
 }
 
 #tekniker section {
@@ -121,7 +121,7 @@ footer {
 }
 
 #tekniker h3 {
-  margin: 1em 0 0.5em 0;
+  margin: 1em 0 1em 0;
 }
 
 #tekniker section ul {
@@ -134,9 +134,8 @@ footer {
 }
 
 #anst ul {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
   padding: 0 2rem;
-  margin-top: -0.5rem;
 }
 
 #anst ul li > * {
@@ -208,12 +207,16 @@ section p {
 
 @media screen and (max-width: 760px) {
   body {
-    background-image: none;
-    background: #222;
+    font-size: 16px;
   }
 
-  section div.right {
+  .no-tablet {
     display: none;
+  }
+
+  body {
+    background-image: none;
+    background: #222;
   }
 
   #wrapper {
@@ -257,10 +260,8 @@ section p {
   }
 
   #tekniker section {
-    /* display: block; */
-    /* width:75%; */
     margin-top: 1rem;
-    width: calc(50%);
+    width: 50%;
     min-width: 8rem;
     margin-bottom: 1rem;
   }
@@ -329,6 +330,11 @@ section p {
   article,
   li {
     page-break-inside: avoid;
+  }
+
+  span.secondary {
+    display: block;
+    width: 100%;
   }
 }
 
