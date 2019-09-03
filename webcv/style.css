@@ -107,7 +107,7 @@ footer {
 }
 
 #wrapper > header section {
-  flex-basis: 165;
+  flex-basis: 165px;
   flex-grow: 1;
   margin: 0 2rem 0 2rem;
 }
