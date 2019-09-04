@@ -98,12 +98,17 @@ footer {
 #wrapper > header {
   position: relative;
 }
+#wrapper > header img {
+  width: 165px !important;
+  height: 250px !important;
+  margin-bottom: 1rem;
+}
 
 #wrapper > header .hero {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 #wrapper > header section {
@@ -113,10 +118,6 @@ footer {
 }
 #wrapper > header section h3 {
   margin-top: 0rem;
-}
-#wrapper > header section h4 {
-  font-family: 'Ubuntu', serif;
-  font-weight: 400;
 }
 
 #wrapper > header aside.links {
@@ -136,21 +137,27 @@ footer {
 #wrapper > header aside.links ul a:after {
   content: '';
 }
-#wrapper > header aside.links ul a:before {
-  content: '\002690';
-  color: #c00;
-  margin-right: 0.4rem;
-}
-#wrapper > header aside.links ul a[href$='print()']:before {
-  content: '\01F5B6';
-}
-#wrapper > header aside.links ul a[href$='.pdf']:before {
-  content: '\01F5CE';
+/* #wrapper > header aside.links ul a:before { */
+/*   content: '\002690'; */
+/*   color: #c00; */
+/*   margin-right: 0.4rem; */
+/* } */
+/* #wrapper > header aside.links ul a[href$='print()']:before { */
+/*   content: '\01F5B6'; */
+/* } */
+/* #wrapper > header aside.links ul a[href$='.pdf']:before { */
+/*   content: '\01F5CE'; */
+/* } */
+
+i {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
 }
 
 #tekniker {
   flex: 1;
-  padding: 1rem 0;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -233,11 +240,11 @@ h3 .right {
   padding: 0 1em 0 0;
 }
 
-#wrapper > header aside.links,
-h1 span.right {
-  min-width: 4rem;
-  text-align: left;
-}
+/* #wrapper > header aside.links, */
+/* h1 span.right { */
+/*   min-width: 4rem; */
+/*   text-align: left; */
+/* } */
 
 #paper h1 {
   margin: 2rem 0 2em 0;
@@ -289,7 +296,8 @@ section p {
   #wrapper > header img,
   #wrapper > header section {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     float: none;
   }
