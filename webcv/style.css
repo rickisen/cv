@@ -44,6 +44,12 @@ a:hover {
   text-decoration: underline;
 }
 
+i {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
+}
+
 hr {
   border: 0px solid transparent;
   border-top: 4px dotted #c00;
@@ -79,8 +85,17 @@ h6 {
   font-weight: 200;
 }
 
-footer {
+#paper footer {
   margin: 4rem 0 2rem 0;
+}
+
+body > footer {
+  width: 50rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+body > footer p {
+  color: #888;
 }
 
 #paper {
@@ -116,7 +131,8 @@ footer {
   flex-grow: 1;
   margin: 0 2rem 0 2rem;
 }
-#wrapper > header section h3 {
+#wrapper > header section h2 {
+  font-size: 1.3em;
   margin-top: 0rem;
 }
 
@@ -137,27 +153,10 @@ footer {
 #wrapper > header aside.links ul a:after {
   content: '';
 }
-/* #wrapper > header aside.links ul a:before { */
-/*   content: '\002690'; */
-/*   color: #c00; */
-/*   margin-right: 0.4rem; */
-/* } */
-/* #wrapper > header aside.links ul a[href$='print()']:before { */
-/*   content: '\01F5B6'; */
-/* } */
-/* #wrapper > header aside.links ul a[href$='.pdf']:before { */
-/*   content: '\01F5CE'; */
-/* } */
-
-i {
-  display: inline-block;
-  width: 1.2em;
-  text-align: center;
-}
 
 #tekniker {
   flex: 1;
-  margin-bottom: 1rem;
+  margin: 2rem 0 4rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -281,6 +280,10 @@ section p {
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  body > footer {
+    width: 100%;
   }
 
   .no-tablet {
