@@ -296,6 +296,27 @@ section p {
     text-align: center;
   }
 
+  #paper a {
+    transition: 100ms ease-in-out;
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.25rem 0 0.25rem 0 !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 0px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    border-top: 1px solid white;
+  }
+  #paper a:hover,
+  #paper a:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid darkgrey;
+    outline: none;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+  }
+
   #wrapper > header img,
   #wrapper > header section {
     display: block;
