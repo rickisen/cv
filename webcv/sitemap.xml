@@ -7,12 +7,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://cv.rickisen.com/sv.html</loc>
-    <lastmod>2019-09-04T14:32:16+00:00</lastmod>
-    <priority>0.80</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://cv.rickisen.com/Rickard_Petersen-cv.pdf</loc>
     <lastmod>2019-09-04T14:36:06+00:00</lastmod>
     <priority>0.1</priority>
@@ -22,12 +16,6 @@
     <loc>https://cv.rickisen.com/index.html</loc>
     <lastmod>2019-09-04T14:32:16+00:00</lastmod>
     <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://cv.rickisen.com/Rickard_Petersen-cv-sv.pdf</loc>
-    <lastmod>2019-09-04T14:36:06+00:00</lastmod>
-    <priority>0.1</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

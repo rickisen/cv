@@ -1,3 +1,2 @@
 User-agent: *
 Disallow: /Rickard_Petersen-cv.pdf
-Disallow: /Rickard_Petersen-cv-sv.pdf
