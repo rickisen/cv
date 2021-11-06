@@ -6,19 +6,458 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="An experienced react and react-native App/Web developer offering consultant services or work as contractor. Based in Stockholm Sweden.">
     <meta name="google-site-verification" content="VDW-uJ-IGepGldgqVLOrjBEicX3khem_UWgSJWEXN_Q" />
-    <title>Rickard Petersen Web/App Developer Based in Stockholm Sweden | Specializing in React and React Native | Contractor | Consultant | Freelance</title>
+    <title>Rickard Petersen Fullstack Developer Based in Stockholm Sweden | Specializing in React and Golang | Contractor | Consultant | Freelance</title>
     <link rel="alternate" hreflang="x-default" href="https://cv.rickisen.com" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|Cinzel:400,700|Gentium+Book+Basic:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,300|Montserrat:700,400|Ubuntu:400,700,500,300" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <style type="text/css" media="screen">
+body {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+  /*   url(bg.jpg); */
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #222;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+p,
+ul,
+span {
+  list-style: none;
+  font-family: 'PT Sans', sans-serif;
+  color: #222;
+}
+
+li {
+  position: relative;
+}
+
+ul > li:before {
+  content: '\2022';
+  position: absolute;
+  top: -0.1em;
+  left: -1em;
+  color: #c00;
+}
+
+a {
+  color: #c00;
+  text-decoration: none;
+}
+
+a:after {
+  content: ' \279E';
+  color: #c00;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+i {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
+}
+
+hr {
+  border: 0px solid transparent;
+  border-top: 4px dotted #c00;
+  margin: 3rem auto;
+  width: 33%;
+  clear: both;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  font-family: 'Ubuntu', serif;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', serif;
+  font-weight: 200;
+}
+
+#paper footer {
+  margin: 4rem 0 2rem 0;
+}
+
+body > footer {
+  width: 50rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+body > footer p {
+  color: #888;
+}
+
+#paper {
+  width: 50rem;
+  margin: 5rem auto;
+  background-color: #eee;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.9);
+}
+
+#wrapper {
+  margin: 0 2cm;
+  padding: 1cm 0 1cm 0;
+}
+
+#wrapper > header {
+  position: relative;
+}
+#wrapper > header img {
+  width: 165px !important;
+  height: 250px !important;
+  margin-bottom: 1rem;
+}
+
+#wrapper > header .hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+#wrapper > header section {
+  flex-basis: 165px;
+  flex-grow: 1;
+  margin: 0 2rem 0 2rem;
+}
+#wrapper > header section h2 {
+  font-size: 1.3em;
+  margin-top: 0rem;
+}
+
+#wrapper > header aside.links {
+  flex-shrink: 1;
+}
+#wrapper > header aside.links ul {
+  margin-top: 0rem;
+  padding: 0rem;
+}
+#wrapper > header aside.links ul > li:before {
+  content: '';
+}
+#wrapper > header aside.links li {
+  margin: 0 0 0.2rem 0;
+}
+
+#wrapper > header aside.links ul a:after {
+  content: '';
+}
+
+#tekniker {
+  flex: 1;
+  margin: 2rem 0 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tekniker h3 {
+  margin: 1em 0 1em 0;
+}
+
+#tekniker section {
+}
+#tekniker section ul {
+  padding: 0 1rem 0;
+  margin-bottom: 0;
+}
+
+#anst h2 {
+  margin-top: 0;
+}
+
+#anst ul {
+  margin: 1rem 0 2rem 0;
+  padding: 0 0 0 2rem;
+}
+
+#anst ul li > * {
+  margin: 0;
+}
+
+#anst ul li {
+  margin: 0 0 1.5rem 0;
+}
+
+#anst ul li p {
+  clear: both;
+  max-width: 25rem;
+  margin: 0.2rem 0;
+  line-height: 1.4em;
+}
+
+#anst ul li h4 {
+  font-weight: 500;
+}
+
+#anst ul li h4 span {
+  font-weight: 400;
+  float: right;
+}
+
+#wrapper article section > p {
+  display: inline-block;
+  width: 66%;
+  max-width: 35rem;
+}
+
+.secondary,
+.secondary * {
+  color: #666;
+}
+.right {
+  float: right;
+  text-align: right;
+}
+.left {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+
+.widthFix {
+  width: 6em;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+h3 .right {
+  font-weight: 400;
+  padding: 0 1em 0 0;
+}
+
+/* #wrapper > header aside.links, */
+/* h1 span.right { */
+/*   min-width: 4rem; */
+/*   text-align: left; */
+/* } */
+
+#paper h1 {
+  margin: 2rem 0 2em 0;
+}
+
+section p {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    font-size: 16px;
+  }
+
+  body {
+    background-image: none;
+    background: #222;
+  }
+
+  #wrapper {
+    margin: 0 1rem;
+  }
+
+  #wrapper section > p {
+    width: 100%;
+  }
+
+  #wrapper header section > p {
+    float: none;
+  }
+
+  #paper {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  body > footer {
+    width: 100%;
+  }
+
+  .no-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  h1 {
+    text-align: center;
+  }
+
+  #paper a {
+    transition: 100ms ease-in-out;
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.25rem 0 0.25rem 0 !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 0px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    border-top: 1px solid white;
+  }
+  #paper a:hover,
+  #paper a:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid darkgrey;
+    outline: none;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+  }
+
+  #wrapper > header img,
+  #wrapper > header section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: none;
+  }
+
+  #wrapper > header .hero {
+    flex-direction: column;
+  }
+
+  #anst ul {
+    padding: 0 0 0 1rem;
+  }
+  #anst ul li h4 {
+    font-size: 14px;
+  }
+  #anst ul li h4 span {
+    padding-right: 0.5rem;
+  }
+  #anst ul {
+    margin-bottom: 5rem;
+  }
+  #wrapper article section > p {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .no-mobile,
+  .no-tablet {
+    display: none !important;
+  }
+}
+
+@media print {
+  @page {
+    size: auto;
+    margin: 20mm 0;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  body {
+    background-image: none;
+    background-color: white;
+  }
+
+  html {
+    background-color: #ffffff;
+    margin: 0px; /* this affects the margin on the html before sending to printer */
+  }
+
+  #paper {
+    box-shadow: none;
+    margin: 1cm auto;
+    width: 21cm;
+    background-color: white;
+  }
+
+  #wrapper {
+    padding: 0;
+  }
+
+  #wrapper > header aside.links {
+    display: none;
+  }
+
+  #tekniker header h2 {
+    display: none;
+  }
+
+  section h3 {
+    margin-top: 0.7rem;
+  }
+
+  hr {
+    opacity: 0;
+    margin: 1rem auto;
+  }
+
+  .break-inside {
+    page-break-inside: auto;
+  }
+
+  section,
+  article,
+  li {
+    page-break-inside: avoid;
+  }
+
+  span.secondary {
+    display: block;
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.email-user::after {
+  content: '@';
+}
+
+.number::before {
+  content: '+46';
+}
+
+.primary {
+  color: #c00;
+}
+    </style>
   </head>
   <body>
     <div id="paper">
       <div id="wrapper">
         <header class="clearfix">
-          <h1>Rickard Petersen Web/App-developer
+          <h1>Rickard Petersen - Fullstack Developer
             <span class="right primary no-mobile no-tablet">
               CV
             </span>
@@ -30,19 +469,20 @@
             <section>
               <h2> Rickard Petersen </h2>
               <p>
-                32 years old<br>
+                34 years old<br>
                 Living in Stockholm Sweden<br>
                 Speaks English and Swedish
               </p>
 
               <p>
+                Gitlab: <a href="https://gitlab.com/rickisen" target="_blank">gitlab.com/rickisen</a> <br>
                 Github: <a href="https://github.com/rickisen" target="_blank">github.com/rickisen</a> <br>
                 LinkedIn: <a href="https://www.linkedin.com/in/rickard-petersen-67540242/" target="_blank">linkedin.com</a> <br>
               </p>
 
               <p>
                 <span class="email-user">rickard.petersen</span>gmail.com<br>
-                <span class="number">760 59 24 69</span><br>
+                <span class="number">760 59 24 69 (please send text first)</span><br>
               </p>
             </section>
 
@@ -61,19 +501,19 @@
           <section>
             <h3>Great at:</h3>
             <ul>
-              <li>React-native</li>
               <li>React</li>
+              <li>GO (golang)</li>
               <li>Node</li>
               <li>Expo</li>
-              <li>Javascript</li>
-              <li>GO (golang)</li>
-              <li>BASH</li>
               <li>TypeScript</li>
+              <li>Kubernetes (k8s)</li>
+              <li>React-native</li>
+              <li>Javascript</li>
+              <li>BASH</li>
               <li>Restfull API</li>
               <li>Wordpress</li>
               <li>Linux</li>
               <li>Docker</li>
-              <li>Kubernetes (k8s)</li>
             </ul>
           </section>
 
@@ -81,10 +521,11 @@
             <h3>Familiar with:</h3>
             <ul>
               <li>DevOps</li>
-              <li>SQL/MongoDb</li>
+              <li>SQL</li>
               <li>CI/CD</li>
+              <li>MongoDb</li>
               <li>C# (Unity3d)</li>
-              <li>PHP</li>
+              <li>CouchDB</li>
               <li>socket.io</li>
               <li>Scrum</li>
               <li>Angular.js</li>
@@ -92,7 +533,6 @@
               <li>Java</li>
               <li>C++ / QT</li>
               <li>VPS / LAMP </li>
-              <li>3D / Rendering</li>
             </ul>
           </section>
 
@@ -103,15 +543,15 @@
               <li>Git</li>
               <li>Linux</li>
               <li>Vim</li>
+              <li>Curl</li>
               <li>npm/yarn</li>
               <li>Webpack</li>
               <li>Systemd</li>
               <li>travis-ci</li>
               <li>Slack</li>
               <li>ffmpeg</li>
-              <li>Blender 3d</li>
               <li>Vagrant</li>
-              <li>Curl</li>
+              <li>CircleCI</li>
             </ul>
           </section>
         </article>
@@ -123,18 +563,6 @@
             <h2>Job History</h2>
           </header>
           <section class="break-inside">
-            <h3>Regnkartan</h3>
-            <span class="no-mobile secondary">react-native / expo / golang / python / k8s</span>
-            <div class="no-tablet no-mobile right widthFix">
-              <span class="secondary">2018 - Now</span>
-            </div>
-            <p>
-              Between my consultant jobs I have been developing an API and
-              a mobile App that focuses on visualizing various historical and
-              current weather data. It's not launched yet. But the App part is
-              open source and readable on my github.
-              <a href="https://github.com/rickisen/regnkartan" target="_blank">github.com/rickisen/regnkartan</a><br/>
-            </p>
             <h3>Freelance Consultant</h3>
             <div class="no-tablet no-mobile right widthFix">
               <span class="secondary">2018 - Now</span>
@@ -146,6 +574,21 @@
               film post-production.
             </p>
             <ul>
+              <li>
+                <h4>Kronans Apotek (Web)</h4>
+                <p class="no-mobile secondary">8mos nov 2019 - july 2020 </p>
+                <p>
+                  Kronans is a large pharmacy chain in Sweden that also has a
+                  e-commerce web shop. At Kronans I worked as a part of a team
+                  of around a dozen developers. I was mostly on the front-end team.
+                  But also developed and worked on some back-end services in
+                  typescript/node. Because of strict government regulations
+                  regarding prescription drugs and privacy Kronans offered some
+                  unique challenges. At Kronans I also got experience with
+                  Klarna, BankID, and a plethora of Swedish delivery solutions.
+                </p>
+                <a href="https://www.kronansapotek.se/" target="_blank">kronansapotek,se</a><br/>
+              </li>
               <li>
                 <h4>Qasa (App / Web)<span class="no-mobile secondary">react-native / react / expo</span></h4>
                 <p class="no-mobile secondary">3mos spring 2019</p>
